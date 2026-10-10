@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Updates - Micaiah David</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+    <script src="data.js"></script>
+    <script src="load-content.js"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-100 via-pink-50 to-purple-100 min-h-screen">
+
+    <!-- Hero Image -->
+    <section class="relative w-full h-[480px] md:h-[620px] overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="images/storefront.jpg" alt="Store" class="w-full h-full object-cover object-center">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/50"></div>
+        </div>
+    </section>
+
+    <!-- Main Content Grid -->
+    <div class="max-w-full mx-auto px-2 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            
+            <!-- Left Sidebar - Treatment Milestones -->
+            <aside class="lg:col-span-2 lg:col-start-2 flex flex-col gap-6 lg:sticky lg:top-6 order-2 lg:order-1">
+                <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-200">
+                    <h3 class="font-serif text-xl font-bold text-gray-800 mb-4">Treatment Quick Facts</h3>
+                    <div class="space-y-3 text-sm text-gray-600" data-sidebar="treatment-milestones"></div>
+                </div>
+
+                <!-- Subscribe Form -->
+                <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl shadow-md p-6 border border-blue-200">
+                    <h3 class="font-serif text-xl font-bold text-gray-800 mb-3">Subscribe to Updates</h3>
+                    <p class="text-sm text-gray-600 mb-4">Get email notifications when we post updates about Micaiah.</p>
+                    <form id="subscribe-form" action="https://script.google.com/macros/s/AKfycbzJByV3z-GKr9hxXatu_BmqS7VwpmHu8LJMl_diWkVEtP1jxxgHfm0MMAfWrjZhUVjwrg/exec" method="POST" target="hidden-iframe" onsubmit="handleSubscribe(event)">
+                        <input 
+                            type="email" 
+                            name="email"
+                            id="subscribe-email"
+                            placeholder="Your email address" 
+                            required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        >
+                        <button 
+                            type="submit"
+                            id="subscribe-button"
+                            class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-colors"
+                        >
+                            Subscribe
+                        </button>
+                    </form>
+                    <p id="subscribe-message" class="text-xs mt-3 text-center hidden"></p>
+                    <p class="text-xs text-gray-500 mt-2 text-center">Note: It may take several days for email updates to arrive due to system constraints.</p>
+                </div>
+            </aside>
+
+            <!-- Main Content - Blog Post -->
+            <main class="lg:col-span-6 lg:col-start-4 order-1 lg:order-2">
+                <article>
+                    <a href="index.html" class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors mb-8">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                        Back to Updates
+                    </a>
+
+                    <h1 class="font-serif text-4xl md:text-5xl font-bold text-gray-800 mb-2">Schedule Updates</h1>
+                    <p class="text-gray-500 text-lg mb-8">June 14, 2026</p>
+
+                    <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+                        <div class="prose prose-lg max-w-none text-gray-700">
+                <p class="mb-4">
+                    The week leading up to Baby #3 (due Saturday, 6/20) is filling up quickly. It's quite remarkable, actually, how the timing of everything has worked out. Although we regret we didn't find out about Micaiah's tumors much earlier, it's hard not to see God making a way for us.  Inventory at the store was 6/4, which required a great deal of time for preparation. It was fortunate that the stress of inventory had passed before the greater stress of Micaiah's diagnosis came upon us. It's also fortunate that Micaiah's first round of treatments will be wrapped up just in time for Baby's due date. We would absolutely flip our lives upside down to make sure Micaiah gets the attention he needs, but so far the attention he needs has fit neatly within the big dates on our calendar. Even if some of that is due to the doctors' awareness of urgency and Jerusha's due date, we can't help but feel some of it is ordained too.
+                </p>
+
+                <p class="mb-4">
+                    After the ophthalmologist diagnosed Micaiah with retinoblastoma, she was able to get us an appointment for an exam the very next day due to a cancellation. We were already appreciative of how quickly they were moving for us, but it wasn't until this week that we realized the ocular oncologist who did the exam was only at Seattle Children's two days each month—and the day we needed him to be there was one of them. Another canceled appointment created an opening for his MRI last week, which was yet another necessary step on the path toward treatment.
+                </p>
+
+                <p class="mb-4">
+                    Then there's this week. Baby is due Saturday, but probably won't come until the middle of next week if Elias and Micaiah's birth/due dates are any indication. We have appointments four days this week leading up to that due date. Then (if my understanding is correct) we should have some recovery time for both Micaiah and Jerusha/Baby. Plans are in place for childcare when Jerusha goes into labor, and those plans include a contingency in case Baby decides to be early (as if anyone in our family would ever be early).
+                </p>
+
+                <p class="mb-4">
+                    We have a few dates to update. We either misunderstood, or the treatment plan got adjusted. In any case, here is the updated schedule for our week:
+                </p>
+
+                <ul class="list-disc pl-6 mb-4 space-y-2">
+                    <li>Monday, 6/15: Baseline hearing test at Everett campus (apparently the carboplatin drug can affect hearing, so they need to get a baseline to test for hearing loss later. This was also an appointment made possible due to a last minute cancellation.)</li>
+                    <li>Tuesday, 6/16: Installation of a port (to avoid poking new holes in him every time he needs treatment or an IV) and taking samples of spinal fluid and bone marrow (to test for cancer spread)</li>
+                    <li>Wednesday, 6/17: First day of chemo treatment (3 separate drugs: vincristine, carboplatin, and etoposide)</li>
+                    <li>Thursday, 6/18: Second day of chemo treatment (only etoposide)</li>
+                </ul>
+
+                <p class="mb-4">
+                    To help with the heavy concentration of appointments this week, my dad called Elias and invited him to spend the week with my parents. Elias was so excited! When I got home the day of the invite, he proudly announced to me that he would be going to Olympia. There he'll be able to get some special adult attention without feeling like he's being left out or gotten-rid-of on account of his brother. (He is largely unaware of Micaiah's condition and the treatments he's starting this week. For now, he knows Micaiah is sick and that he has a problem with his eyes.) He'll also get some dedicated cousin time, which will be awesome for him. As Elias kept telling us about going to Olympia with Granny and Papa, we came upon a tragically touching moment. Unbeknownst to us, he had begun to pack an overnight bag for himself. He was proudly listing off the items he had packed when he announced that he had packed some of Micaiah's things too. His demeanor visibly fell when we told him Micaiah wasn't big enough to go. For as much as they antagonize each other, Elias sure loves that kid.
+                </p>
+
+                <p class="mb-4">
+                    Please continue to pray for Micaiah and our family. Specifically, we need continued prayers for favorable MRI results as well as favorable biopsy results. Those will help determine whether the cancer has spread beyond the eyes. In particular, the full MRI results will show whether the tumor has grown into the veins, which would require eye removal. We pray that he will be able to keep not just one, but both eyes. We also need prayers for highly effective treatment, smooth recovery, and good symptom management. He is such a sweet boy, and he has no way to steel himself for what is to come. Finally, we need prayers for a divinely-planned delivery date, a smooth delivery, and easy transition. Thank you all for your faithful support.
+                </p>
+                        </div>
+                    </div>
+                </article>
+            </main>
+
+            <!-- Right Sidebar Column -->
+            <aside class="lg:col-span-2 flex flex-col gap-6 lg:sticky lg:top-6 self-start order-3">
+                <!-- How to Pray -->
+                <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl shadow-md p-6 border border-amber-200">
+                    <h3 class="font-serif text-2xl font-bold text-amber-800 mb-4 text-center">How to Pray for Us Right Now</h3>
+                    <ul class="grid grid-cols-1 gap-3 text-gray-700" data-sidebar="pray-list"></ul>
+                </div>
+
+                <!-- How to Give Thanks -->
+                <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl shadow-md p-6 border border-green-200">
+                    <h3 class="font-serif text-2xl font-bold text-green-800 mb-4 text-center">How to Give Thanks with Us Right Now</h3>
+                    <ul class="grid grid-cols-1 gap-3 text-gray-700" data-sidebar="thanks-list"></ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <iframe name="hidden-iframe" style="display:none;"></iframe>
+
+    <script>
+        function handleSubscribe(event) {
+            event.preventDefault();
+            
+            const email = document.getElementById('subscribe-email').value;
+            const button = document.getElementById('subscribe-button');
+            const message = document.getElementById('subscribe-message');
+            
+            button.disabled = true;
+            button.textContent = 'Subscribing...';
+            
+            // Use form submission to avoid CORS issues
+            const form = document.getElementById('subscribe-form');
+            form.submit();
+            
+            // Show success message after a delay
+            setTimeout(() => {
+                message.classList.remove('hidden');
+                message.textContent = 'Successfully subscribed!';
+                message.classList.add('text-green-600');
+                document.getElementById('subscribe-email').value = '';
+                button.disabled = false;
+                button.textContent = 'Subscribe';
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

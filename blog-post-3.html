@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRI Results and Treatment Schedule - Micaiah David</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+    <script src="data.js"></script>
+    <script src="load-content.js"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-100 via-pink-50 to-purple-100 min-h-screen">
+
+    <!-- Hero Image -->
+    <section class="relative w-full h-[480px] md:h-[620px] overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="images/storefront.jpg" alt="Store" class="w-full h-full object-cover object-center">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/50"></div>
+        </div>
+    </section>
+
+    <!-- Main Content Grid -->
+    <div class="max-w-full mx-auto px-2 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            
+            <!-- Left Sidebar - Treatment Milestones -->
+            <aside class="lg:col-span-2 lg:col-start-2 flex flex-col gap-6 lg:sticky lg:top-6 order-2 lg:order-1">
+                <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-200">
+                    <h3 class="font-serif text-xl font-bold text-gray-800 mb-4">Treatment Quick Facts</h3>
+                    <div class="space-y-3 text-sm text-gray-600" data-sidebar="treatment-milestones"></div>
+                </div>
+
+                <!-- Subscribe Form -->
+                <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl shadow-md p-6 border border-blue-200">
+                    <h3 class="font-serif text-xl font-bold text-gray-800 mb-3">Subscribe to Updates</h3>
+                    <p class="text-sm text-gray-600 mb-4">Get email notifications when we post updates about Micaiah.</p>
+                    <form id="subscribe-form" action="https://script.google.com/macros/s/AKfycbzJByV3z-GKr9hxXatu_BmqS7VwpmHu8LJMl_diWkVEtP1jxxgHfm0MMAfWrjZhUVjwrg/exec" method="POST" target="hidden-iframe" onsubmit="handleSubscribe(event)">
+                        <input 
+                            type="email" 
+                            name="email"
+                            id="subscribe-email"
+                            placeholder="Your email address" 
+                            required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        >
+                        <button 
+                            type="submit"
+                            id="subscribe-button"
+                            class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-colors"
+                        >
+                            Subscribe
+                        </button>
+                    </form>
+                    <p id="subscribe-message" class="text-xs mt-3 text-center hidden"></p>
+                    <p class="text-xs text-gray-500 mt-2 text-center">Note: It may take several days for email updates to arrive due to system constraints.</p>
+                </div>
+            </aside>
+
+            <!-- Main Content - Blog Post -->
+            <main class="lg:col-span-6 lg:col-start-4 order-1 lg:order-2">
+                <article>
+                    <a href="index.html" class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors mb-8">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                        Back to Updates
+                    </a>
+
+                    <h1 class="font-serif text-4xl md:text-5xl font-bold text-gray-800 mb-2">MRI Results and Treatment Schedule</h1>
+                    <p class="text-gray-500 text-lg mb-8">June 12, 2026</p>
+
+                    <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+                        <div class="prose prose-lg max-w-none text-gray-700">
+                <p class="mb-4">
+                    Today was another step in the process. While Elias and I went into work, Jerusha took Micaiah for his MRI appointment as well as a hematology and oncology consultation. It was a long day for Micaiah. He left home before 8am and didn't get home until 6pm. Since they put him under for the MRI, he wasn't able to eat anything throughout the morning. Once he came to, he devoured his snacks. Apparently the precise concoction they give Micaiah to put him under is different depending on the needs for each appointment. Whatever they used today, I hope they do it again. Jerusha reported that it turned him into "Loopy Micaiah." As he was coming to, he kept playing with his own dizziness, turning and shaking his head around and producing uncontrollable giggles. 
+                </p>
+                <p class="mb-4">
+                    Jerusha reports that he was a total champ throughout the day. As his personality continues to come out, he is more and more a master of charisma. His regular chants (or maybe shouts) of "E-I-E-I-O" cracked smiles throughout the waiting room with patients and staff alike. He kept playing peek-a-boo with people through the glass doors, literally making people laugh out loud. All the healthcare workers there certainly know how to care for kids well. Jerusha never felt rushed out before questions were answered, and they often had extra people in the room to help play with Micaiah so she could focus on the information they were giving her. 
+                </p>
+                <p class="mb-4">
+                    We don't yet have the full results from the MRI, but they were able to give us some preliminary results. There were two main areas of concern going into this. The first was that there could be a tumor growth on the brain since the tumor was already in both eyes. That turned out not to be the case. The second concern was that the tumors might be growing into the veins of the eyes, which would increase the risk of spread elsewhere. If the tumors had grown into the veins like that, they would recommend removal of the eye to prevent the spread throughout the body. While the preliminary results didn't show that per se, the tumor in the left eye was very close to some of those veins. The complete MRI results should give us more information, but we are still prayerful that the tumors have not grown into those veins and that we will be able to keep both his eyes.
+                </p>
+
+                <p class="mb-4">
+                    After the MRI, they discussed treatment. Our first round of treatment for Micaiah will be Tuesday/Wednesday of this coming week (6/16-17). Since this will require multiple rounds of treatment, they're going to put in a port (a little IV access point) so they can avoid pinching him every time. They were encouraging about the treatment though, saying that it's not quite like they show in the movies. They were saying that little kids often do well, wandering around and being silly or playing while receiving treatment. They also quelled some of our fears regarding life-long side effects of interrupting or harming his developmental process. Apparently the specific treatments he will be receiving will not inhibit his development, and kids receiving it often grow up without any frailty. Of course, there will be some side effects. He will lose his hair, he won't have as much energy, he might have nausea, and he will probably be a bit lethargic. With this specific treatment, he will also have an elevated risk of other cancers developing later in life. However, given the fact that he has this retinoblastoma in both eyes, he will already have that elevated risk regardless of the side effects to this treatment. Still, if the treatment is effective, he can lead a very normal life. 
+                </p>
+                <p class="mb-4">
+                    When he got home, he was our normal little boy. He started romping around like any other day. One new development was that he ran down the hall and stood next to the training toilet. I didn't think much of it because he has been sitting on it for fun recently. What got my attention was when he quickly ran back to my and made an expressive grunting sound as he indicated he had diaper needs. When I asked if he had to go potty, he said, "Yeah." And he did! It was his first potty on the training toilet. As silly as it sounds, that experience was a sweet mercy and a reminder that our lives will continue to have blessings—even in this season. 
+                </p>
+            </div>
+        </div>
+                </article>
+            </main>
+
+            <!-- Right Sidebar Column -->
+            <aside class="lg:col-span-2 flex flex-col gap-6 lg:sticky lg:top-6 self-start order-3">
+                <!-- How to Pray -->
+                <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl shadow-md p-6 border border-amber-200">
+                    <h3 class="font-serif text-2xl font-bold text-amber-800 mb-4 text-center">How to Pray for Us Right Now</h3>
+                    <ul class="grid grid-cols-1 gap-3 text-gray-700" data-sidebar="pray-list"></ul>
+                </div>
+
+                <!-- How to Give Thanks -->
+                <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl shadow-md p-6 border border-green-200">
+                    <h3 class="font-serif text-2xl font-bold text-green-800 mb-4 text-center">How to Give Thanks with Us Right Now</h3>
+                    <ul class="grid grid-cols-1 gap-3 text-gray-700" data-sidebar="thanks-list"></ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <iframe name="hidden-iframe" style="display:none;"></iframe>
+
+    <script>
+        function handleSubscribe(event) {
+            event.preventDefault();
+            
+            const email = document.getElementById('subscribe-email').value;
+            const button = document.getElementById('subscribe-button');
+            const message = document.getElementById('subscribe-message');
+            
+            button.disabled = true;
+            button.textContent = 'Subscribing...';
+            
+            // Use form submission to avoid CORS issues
+            const form = document.getElementById('subscribe-form');
+            form.submit();
+            
+            // Show success message after a delay
+            setTimeout(() => {
+                message.classList.remove('hidden');
+                message.textContent = 'Successfully subscribed!';
+                message.classList.add('text-green-600');
+                document.getElementById('subscribe-email').value = '';
+                button.disabled = false;
+                button.textContent = 'Subscribe';
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

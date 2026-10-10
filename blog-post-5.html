@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Round 1 Infusions and Sundries - Micaiah David</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+    <script src="data.js"></script>
+    <script src="load-content.js"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-100 via-pink-50 to-purple-100 min-h-screen">
+
+    <!-- Hero Image -->
+    <section class="relative w-full h-[480px] md:h-[620px] overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="images/storefront.jpg" alt="Store" class="w-full h-full object-cover object-center">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/50"></div>
+        </div>
+    </section>
+
+    <!-- Main Content Grid -->
+    <div class="max-w-full mx-auto px-2 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            
+            <!-- Left Sidebar - Treatment Milestones -->
+            <aside class="lg:col-span-2 lg:col-start-2 flex flex-col gap-6 lg:sticky lg:top-6 order-2 lg:order-1">
+                <div class="bg-white rounded-2xl shadow-md p-6 border border-gray-200">
+                    <h3 class="font-serif text-xl font-bold text-gray-800 mb-4">Treatment Quick Facts</h3>
+                    <div class="space-y-3 text-sm text-gray-600" data-sidebar="treatment-milestones"></div>
+                </div>
+
+                <!-- Subscribe Form -->
+                <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl shadow-md p-6 border border-blue-200">
+                    <h3 class="font-serif text-xl font-bold text-gray-800 mb-3">Subscribe to Updates</h3>
+                    <p class="text-sm text-gray-600 mb-4">Get email notifications when we post updates about Micaiah.</p>
+                    <form id="subscribe-form" action="https://script.google.com/macros/s/AKfycbzJByV3z-GKr9hxXatu_BmqS7VwpmHu8LJMl_diWkVEtP1jxxgHfm0MMAfWrjZhUVjwrg/exec" method="POST" target="hidden-iframe" onsubmit="handleSubscribe(event)">
+                        <input 
+                            type="email" 
+                            name="email"
+                            id="subscribe-email"
+                            placeholder="Your email address" 
+                            required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        >
+                        <button 
+                            type="submit"
+                            id="subscribe-button"
+                            class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-colors"
+                        >
+                            Subscribe
+                        </button>
+                    </form>
+                    <p id="subscribe-message" class="text-xs mt-3 text-center hidden"></p>
+                    <p class="text-xs text-gray-500 mt-2 text-center">Note: It may take several days for email updates to arrive due to system constraints.</p>
+                </div>
+            </aside>
+
+            <!-- Main Content - Blog Post -->
+            <main class="lg:col-span-6 lg:col-start-4 order-1 lg:order-2">
+                <article>
+                    <a href="index.html" class="inline-flex items-center text-blue-600 font-medium hover:text-blue-700 transition-colors mb-8">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                        Back to Updates
+                    </a>
+
+                    <h1 class="font-serif text-4xl md:text-5xl font-bold text-gray-800 mb-2">Round 1 Infusions and Sundries</h1>
+                    <p class="text-gray-500 text-lg mb-8">June 18, 2026</p>
+
+                    <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+                        <div class="prose prose-lg max-w-none text-gray-700">
+                <p class="mb-4">
+                    Our hearts are tired, but full. The news we have received so far this week has been a mix of good and unclear news. So far we haven't received any bad news, but we have a long road ahead of us. This is just the beginning of our journey, so we are preparing ourselves mentally and spiritually for the days to come.
+                </p>
+
+                <p class="mb-4">
+                    Tuesday (6/16) was a hard day. Micaiah had a port put in place to make blood draws and infusions much easier on him in the future. This involved a surgery that put an access point (Port-a-Cath) in his chest that connects to a large vein, allowing future venous access without constant pricks. To my ears, this sounded like quite the delicate procedure and was more than a little stressful, but there were no complications.
+                </p>
+                <p class="mb-4">
+                    While he was still anesthetized, they took a bilateral bone marrow sample and spinal fluid sample. These were precautionary checks to see whether the cancer had metastasized. The spinal fluid sample came back negative, for which we are thankful. We have yet to hear about the marrow, and we expect to get results next week.
+                </p>
+
+                <p class="mb-4">
+                    The hardest moment so far came that day. When Micaiah woke up, they were taking an X-ray to ensure the port had been placed properly. He was a brave little guy up until the point he saw us walk into the room. Once mom was in sight, it was time to let loose. We came over to console him, but he was very upset. His distress came from somewhere in the Venn diagram between all the wires and tubes, hunger from not eating for 12 hours, and possibly some pain from the procedures. Seeing him so distraught was challenging for both of us, but food, mom snuggles, and disconnecting from medical equipment were an effective therapy for him. 
+                </p>
+
+                <p class="mb-4">
+                    Wednesday (6/17) was much less challenging. The MRI full results did come back, and they were potentially concerning though inconclusive. The tumor he has in both eyes is quite developed. The main concern in the MRI is the left eye. There is a bright spot on his left optic nerve that could indicate cancer, but that is not certain. Many things could return a bright spot on an MRI. Part of the problem is that both eyes have very developed tumors. The doctor was explaining that if a tumor of that size was in only one eye, they would typically remove it right away. The complication is that not all tumors respond to the chemo treatment equally. It's possible that the left eye will respond excellently while the right eye doesn't respond. Were that to happen, they would want to remove the right eye. Since they weigh the importance of vision in life, they did not feel it would be prudent to remove the left eye (with the inconclusive results) at least until they see how both eyes begin to respond to treatment.
+                </p>
+
+                <p class="mb-4">
+                    At this point, the MRI news for the eyes is no better and no worse than what we heard in the preliminary results. It is still possible to save both eyes, and it is still possible to lose both eyes. Our prayer is that the treatment would be miraculously effective. We did clarify with the doctor about his vision. It was unclear to us whether—assuming he gets to keep both eyes—the vision in his left eye would be permanently affected. There are no promises or guarantees, but it is within the realm of medical possibilities that he could recover some vision in that left eye if all goes well.
+                </p>
+
+                <p class="mb-4">
+                    As we have spelled out before, we will accept God's will whatever it may be. But the LORD is a God of miracles, and he promises that in His kingdom the blind will see. We remind Him of His promises, knowing that both His promises and our cause are just. 
+                </p>
+                <p class="mb-4">
+                    The first day of chemo was reassuring. This whole time has been stressful because we've been eager to get him the treatments he needs to get better. Starting chemo helped to give us the confidence that he's getting every bit help his body can handle. It was also good to have context for how the infusions would go. He was very much his normal self while the drugs were administered, and he was able to play with toys and with us while we were waiting for the drips to finish. The biggest challenge we faced for that day was that he was maxing out sleep-wise as the drips were nearing the end. 
+                </p>
+
+                <p class="mb-4">
+                    On Thursday (6/18), Micaiah had a precautionary MRI for his spine and one infusion. He went under anesthesia for the MRI, but the port removed the necessity of using a mask and made it so much easier. We were able to hold him while he fell asleep and be there in the recovery room as he woke up again. After the MRI, we hustled across the complex for his infusion. Rather than being there four or five hours like Wednesday, we only had one infusion that took less than two hours. He was a champ and took it all so well.
+                </p>
+
+                <p class="mb-4">
+                    Watching Micaiah over the past few days has been hard, but edifying. He is such a brave boy, and he is handling everything well. We are encouraged by his resilience and the bravery he is showing. They say courage and humility are the first of all virtues. I find that to be true, and I am encouraged by seeing them in Micaiah's disposition of trust—even despite his confusing and sometimes distressing circumstances. Please continue to intercede with us for God's promises to be fulfilled in Micaiah. 
+                </p>
+                        </div>
+                    </div>
+                </article>
+            </main>
+
+            <!-- Right Sidebar Column -->
+            <aside class="lg:col-span-2 flex flex-col gap-6 lg:sticky lg:top-6 self-start order-3">
+                <!-- How to Pray -->
+                <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl shadow-md p-6 border border-amber-200">
+                    <h3 class="font-serif text-2xl font-bold text-amber-800 mb-4 text-center">How to Pray for Us Right Now</h3>
+                    <ul class="grid grid-cols-1 gap-3 text-gray-700" data-sidebar="pray-list"></ul>
+                </div>
+
+                <!-- How to Give Thanks -->
+                <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl shadow-md p-6 border border-green-200">
+                    <h3 class="font-serif text-2xl font-bold text-green-800 mb-4 text-center">How to Give Thanks with Us Right Now</h3>
+                    <ul class="grid grid-cols-1 gap-3 text-gray-700" data-sidebar="thanks-list"></ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <iframe name="hidden-iframe" style="display:none;"></iframe>
+
+    <script>
+        function handleSubscribe(event) {
+            event.preventDefault();
+            
+            const email = document.getElementById('subscribe-email').value;
+            const button = document.getElementById('subscribe-button');
+            const message = document.getElementById('subscribe-message');
+            
+            button.disabled = true;
+            button.textContent = 'Subscribing...';
+            
+            // Use form submission to avoid CORS issues
+            const form = document.getElementById('subscribe-form');
+            form.submit();
+            
+            // Show success message after a delay
+            setTimeout(() => {
+                message.classList.remove('hidden');
+                message.textContent = 'Successfully subscribed!';
+                message.classList.add('text-green-600');
+                document.getElementById('subscribe-email').value = '';
+                button.disabled = false;
+                button.textContent = 'Subscribe';
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
